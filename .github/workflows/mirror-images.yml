@@ -1,7 +1,9 @@
 name: Mirror Docker Images to GHCR
 
 on:
-    workflow_dispatch:
+    push:
+        branches:
+            - "**"
 
 env:
     REGISTRY: ghcr.io
